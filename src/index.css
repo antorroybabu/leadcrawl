@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 18% 4%;
+  --foreground: 240 5% 93%;
+  --primary: 273 66% 52%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 12% 13%;
+  --secondary-foreground: 240 5% 93%;
+  --muted: 240 12% 12%;
+  --muted-foreground: 240 6% 52%;
+  --accent: 240 12% 13%;
+  --accent-foreground: 240 5% 93%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 12% 13%;
+  --input: 240 12% 13%;
+  --ring: 273 66% 52%;
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+.text-green-accent {
+  color: hsl(152 60% 50%);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
