@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 mb-5">
-              <img src="/logo-leadcrawl.svg" alt="LeadCrawl" className="h-7 w-auto" />
+               <img src="/leadcrawl/logo-leadcrawl.svg" alt="LeadCrawl" className="h-7 w-auto" />
               <span className="text-base font-semibold tracking-tight text-foreground">LeadCrawl</span>
             </Link>
             <p className="text-sm text-foreground/60 leading-relaxed mb-6 max-w-sm">
@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       <img
-        src="/images/spider-footer-dark.webp"
+        src="/leadcrawl/images/spider-footer-dark.webp"
         alt=""
         className="absolute bottom-0 right-0 h-56 w-auto object-contain opacity-30 pointer-events-none select-none mix-blend-screen"
       />

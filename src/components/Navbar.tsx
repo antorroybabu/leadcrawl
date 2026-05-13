@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-[1536px] mx-auto px-6 sm:px-10 lg:px-20 h-16 flex items-center justify-between gap-8">
         <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
           <img
-            src="/logo-leadcrawl.svg"
+            src="/leadcrawl/logo-leadcrawl.svg"
             alt="LeadCrawl"
             className="h-7 w-auto"
           />
