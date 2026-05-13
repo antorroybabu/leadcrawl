@@ -338,9 +338,9 @@ result = crawler.run()
                   <span className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
                     Works with
                   </span>
-                  <img src="/images/logos/claude.svg" alt="Claude" className="h-3.5 w-auto brightness-0 invert" />
-                  <img src="/images/logos/gemini.png" alt="Gemini" className="h-3.5 w-auto" />
-                  <img src="/images/logos/openai.png" alt="OpenAI" className="h-3.5 w-auto brightness-0 invert" />
+                  <img src="/leadcrawl/images/logos/claude.svg" alt="Claude" className="h-3.5 w-auto brightness-0 invert" />
+                  <img src="/leadcrawl/images/logos/gemini.png" alt="Gemini" className="h-3.5 w-auto" />
+                  <img src="/leadcrawl/images/logos/openai.png" alt="OpenAI" className="h-3.5 w-auto brightness-0 invert" />
                 </div>
               </motion.div>
             </div>
@@ -357,7 +357,7 @@ result = crawler.run()
               {[...INTEGRATIONS, ...INTEGRATIONS].map((img, i) => (
                 <div key={i} className="flex-shrink-0 px-6 sm:px-8">
                   <img
-                    src={`/images/${img}`}
+                    src={`/leadcrawl/images/${img}`}
                     alt="Integration"
                     className="h-7 sm:h-9 w-auto opacity-45 hover:opacity-75 transition-all grayscale hover:grayscale-0"
                   />
