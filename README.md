@@ -47,3 +47,7 @@ npm run dev
 ## License
 
 MIT
+
+## Deployment
+
+Deployed on GitHub Pages
