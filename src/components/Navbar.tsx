@@ -60,7 +60,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-3 shrink-0">
           <a
-            href="https://github.com/leadcrawl"
+            href="https://github.com/antorroybabu/leadcrawl"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors px-3 py-2 rounded-lg hover:bg-white/[0.05]"
