@@ -523,6 +523,95 @@ result = crawler.run()
           </div>
         </section>
 
+        {/* ── USE CASES ── */}
+        <section className="py-20 sm:py-28">
+          <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-20">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={fadeUp}
+              className="text-center mb-14"
+            >
+              <p className="font-mono text-[11px] font-medium uppercase tracking-widest text-muted-foreground mb-4">
+                Use Cases
+              </p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground">
+                Built for every scraping need
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Price Monitoring Bot",
+                  tags: ["Amazon products", "eBay listings", "Shopify stores"],
+                  desc: "Track competitor prices on Amazon, eBay, and other e-commerce sites. Get alerts when prices drop or inventory changes.",
+                },
+                {
+                  title: "Lead Generation Tool",
+                  tags: ["LinkedIn profiles", "Twitter users", "Company contacts"],
+                  desc: "Extract LinkedIn profiles, Twitter accounts, and contact information at scale without getting blocked.",
+                },
+                {
+                  title: "Market Research Dashboard",
+                  tags: ["Product reviews", "App ratings", "Customer sentiment"],
+                  desc: "Aggregate reviews, ratings, and sentiment from multiple sites. Build comprehensive competitor analysis.",
+                },
+                {
+                  title: "Real Estate Tracker",
+                  tags: ["Zillow listings", "Redfin data", "Rental properties"],
+                  desc: "Monitor property listings on Zillow, Redfin, and local sites. Track price changes and new listings.",
+                },
+                {
+                  title: "MCP Server",
+                  tags: ["Claude Desktop", "Cursor IDE", "AI Workflows"],
+                  desc: "Connect AI assistants directly to the web via Model Context Protocol. Enable Claude, Cursor, and other AI tools to scrape data in real-time.",
+                },
+                {
+                  title: "AI Agent Tool",
+                  tags: ["RAG pipelines", "Autonomous agents", "Real-time data"],
+                  desc: "Provide agents with extremely fast web access. Perfect for RAG pipelines, autonomous research, and real-time data enrichment.",
+                },
+              ].map((useCase, i) => (
+                <motion.div
+                  key={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-40px" }}
+                  custom={i % 3}
+                  variants={fadeUp}
+                  className="p-7 border border-white/[0.07] bg-card/50 rounded-2xl hover:border-primary/30 hover:bg-primary/[0.03] transition-all duration-200 group"
+                >
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {useCase.tags.map((tag, j) => (
+                      <span
+                        key={j}
+                        className="px-2.5 py-1 text-[10px] font-mono font-medium uppercase tracking-wider bg-primary/10 text-primary rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h3 className="text-lg font-semibold tracking-tight text-foreground mb-3">
+                    {useCase.title}
+                  </h3>
+                  <p className="text-sm text-foreground/55 leading-relaxed mb-5">
+                    {useCase.desc}
+                  </p>
+                  <Link
+                    href="/docs"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors group/link"
+                  >
+                    Read more
+                    <span className="group-hover/link:translate-x-1 transition-transform">→</span>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── PRICING PREVIEW ── */}
         <section className="py-20 sm:py-28 bg-white/[0.02] border-y border-white/[0.05]">
           <div className="max-w-[1280px] mx-auto px-6 sm:px-10 lg:px-20">
